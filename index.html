@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/home.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <title>Travia</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-white px-5 fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Travia</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse gap-4" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto gap-0 gap-lg-4">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+
+
+                </ul>
+
+                <form class="d-flex">
+                    <a type="button" class="btn btn-rounded" data-bs-toggle="modal" data-bs-target="#login-modal"
+                        data-bs-dismiss="modal">Log In</a>
+                </form>
+
+            </div>
+        </div>
+    </nav>
+
+    <div id="hero" class="container-fluid d-flex justify-content-around align-items-center flex-column flex-sm-row align-items-center bg-light">
+
+        <div id="hero-text" class="text-center text-md-start">
+            <h2 class="my-3">We are professional planners for your vacations.</h2>
+
+            <p class="my-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias quidem exercitationem ab
+                doloribus reiciendis molestias amet velit quasi perferendis sed.</p>
+
+            <a href="#booking" class=" my-3 btn rounded">Explore <i class="fw-bold fs-4 bi bi-arrow-down-short"></i></a>
+
+        </div>
+
+        <div class="img-container align-self-md-start align-self-lg-center d-none d-sm-block">
+            <img src="img/illustration1 (2).png" alt="" class="img-fluid">
+        </div>
+    </div>
+
+    <div id="booking" class="container-fluid">
+        <h4 class="text-center">Book Tickets and Hostels</h4>
+
+        <div class="cards-container py-3">
+
+            <div class="row justify-content-around my-2">
+                <div class="Card Card1 d-flex flex-column justify-content-around align-items-center">
+
+                    <div class="icon-wrap">
+                        <img src="img/airplane.png" alt="" class="img-fluid">
+                    </div>
+
+                    <h6 class="text-center mt-4">Airlines Tickets</h6>
+                </div>
+
+                <div class="Card Card2 d-flex flex-column justify-content-around align-items-center">
+
+                    <div class="icon-wrap">
+                        <img src="img/train.png" alt="" class="img-fluid">
+                    </div>
+
+                    <h6 class="text-center mt-4">Railway Tickets</h6>
+                </div>
+
+                <div class="Card Card3 d-flex flex-column justify-content-around align-items-center">
+
+                    <div class="icon-wrap">
+                        <img src="img/cab.png" alt="" class="img-fluid">
+                    </div>
+
+                    <h6 class="text-center mt-4">Outstation Rides</h6>
+                </div>
+            </div>
+
+            <div class="row justify-content-around my-2">
+                <div class="Card Card4 d-flex flex-column justify-content-around align-items-center">
+
+                    <div class="icon-wrap">
+                        <img src="img/bus.png" alt="" class="img-fluid">
+                    </div>
+
+                    <h6 class="text-center mt-4">Bus Tickets</h6>
+                </div>
+
+                <div class="Card Card5 d-flex flex-column justify-content-around align-items-center">
+
+                    <div class="icon-wrap">
+                        <img src="img/hotel.png" alt="" class="img-fluid">
+                    </div>
+
+                    <h6 class="text-center mt-4">Book Hotel</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="login-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- <h5 class="modal-title" id="exampleModalLabel">Login to TRAVIA</h5> -->
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <h4 class="text-center mt-3">Sign In to <span>Travia</span></h4>
+
+                    <form class="my-5 d-flex flex-column gap-2 align-items-center">
+                        <div class="mb-3">
+                            <!-- <label for="exampleInputEmail1" class="form-label">Email address</label> -->
+                            <input required type="email" class="form-control" aria-describedby="emailHelp"
+                                placeholder="Enter your email address ..">
+
+                        </div>
+                        <div class="mb-3">
+                            <!-- <label for="exampleInputPassword1" class="form-label">Password</label> -->
+                            <input type="password" class="form-control" placeholder="Password" required>
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                            <label class="form-check-label" for="exampleCheck1">Remember Me</label>
+                        </div>
+                        <button type="submit" class="btn">Log In</button>
+                    </form>
+
+                    <!-- <h6 class="text-center">New User ? <a href="#booking">Register here .</a></h6> -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="signup-modal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <h4 class="text-center mb-3"><span>Travia</span> User Registration</h4>
+
+                    <form action="" class="d-flex flex-column align-items-center my-5 gap-4">
+
+                        <div class="row user-name gap-4">
+                            <input required type="text" class="form-control" aria-describedby="emailHelp"
+                                placeholder="First Name">
+                            <input required type="text" class="form-control" aria-describedby="emailHelp"
+                                placeholder="Last Name">
+
+                        </div>
+
+                        <div class="row mobile gap-4">
+                            <select name="country-code" id="country-select" required>
+                                <option value="+91" selected="selected">(+91)India &#127470;&#127475; </option>
+                                <option value="+1">(+1)USA &#127482;&#127480; </option>
+                                <option value="+81">(+81)Japan &#127471;&#127477; </option>
+                                <option value="+65">(+65)Singapore &#127480;&#127468; </option>
+                            </select>
+                            <input required type="number" class="form-control" placeholder="Mobile number">
+                        </div>
+
+                        <input required type="email" class="form-control align-self-start" aria-describedby="emailHelp"
+                            placeholder="Enter email address" id="signup-email">
+
+                        <input required type="password" class="form-control align-self-start"
+                            placeholder="Set password">
+                        <input required type="password" class="form-control align-self-start"
+                            placeholder="Re-type password">
+
+                        <div class="tnc-check d-flex align-self-start gap-2">
+                            <label for="tnc-check">I agree with all terms</label>
+                            <input type="checkbox" id="tnc-checkbox">
+                        </div>
+
+                        <div class="news-check d-flex align-self-start gap-2">
+                            <label for="news-checkbox">sign up for newsletter for updates?</label>
+                            <input type="checkbox" id="news-checkbox">
+                        </div>
+                        <button type="submit" class="btn align-self-start register-cta disabled">Register</button>
+                    </form>
+
+                    <!-- <h6 class="text-center mt-4">Old User ? <a href="" data-bs-toggle="modal"
+                            data-bs-target="#login-modal" data-bs-dismiss="modal">Login .</a></h6> -->
+                </div>
+
+
+
+            </div>
+
+        </div>
+    </div>
+
+<section class="signin-prompt d-flex px-5 py-5 justify-content-around gap-3 gap-md-0 bg-light flex-column flex-md-row align-items-md-center align-items-start">
+    <h3 class="lead">You must log in to avail our services <i class="bi bi-arrow-right-circle"></i></h3>
+
+    <div class="prompt-btns d-flex justify-content-around align-items-center justify-content-start gap-3">
+        <div class="btn prompt-btn1 text-light" data-bs-target="#login-modal" data-bs-dismiss="modal" data-bs-toggle="modal">Log In</div>
+        <div class="btn prompt-btn2 btn-outline-secondary" data-bs-target="#signup-modal" data-bs-dismiss="modal" data-bs-toggle="modal">Register</div>
+    </div>
+
+</section>
+
+<section class="register-form px-5 py-5 d-flex align-items-center flex-column">
+
+        <h4 class="text-center mb-3"><span>Travia</span> User Registration</h4>
+
+        <form action="" class="d-flex flex-column align-items-center my-5 gap-4">
+
+            <div class="row user-name gap-4 flex-nowrap">
+                <input required type="text" class="form-control" aria-describedby="emailHelp"
+                    placeholder="First Name">
+                <input required type="text" class="form-control align-self-end" aria-describedby="emailHelp"
+                    placeholder="Last Name">
+
+            </div>
+
+            <div class="row mobile gap-3 gap-md-5 flex-column flex-md-row flex-nowrap ">
+                <select name="country-code" id="country-select" required>
+                    <option value="+91" selected="selected">(+91)India &#127470;&#127475; </option>
+                    <option value="+1">(+1)USA &#127482;&#127480; </option>
+                    <option value="+81">(+81)Japan &#127471;&#127477; </option>
+                    <option value="+65">(+65)Singapore &#127480;&#127468; </option>
+                </select>
+                <input required type="number" class="form-control align-self-md-end align-self-start" placeholder="Mobile number">
+            </div>
+
+            <input required type="email" class="form-control align-self-start" aria-describedby="emailHelp"
+                placeholder="Enter email address" id="signup-email">
+
+            <input required type="password" class="form-control align-self-start"
+                placeholder="Set password">
+
+            <input required type="password" class="form-control align-self-start"
+                placeholder="Re-type password">
+
+            <div class="tnc-check d-flex align-self-start gap-2">
+                <label for="tnc-check">I agree with all terms</label>
+                <input type="checkbox" id="tnc-checkbox">
+            </div>
+
+            <div class="news-check d-flex align-self-start gap-2">
+                <label for="news-checkbox">sign up for newsletter for updates?</label>
+                <input type="checkbox" id="news-checkbox">
+            </div>
+            <button type="submit" class="btn align-self-start register-cta disabled">Register</button>
+        </form>
+
+</section>
+
+<div class="footer mb-0 justify-content-center text-secondary bg-light">
+    <footer>
+        <div class="row justify-content-center py-5">
+            <div class="col-11">
+                <div class="row ">
+                    <div class="col-xl-8 col-md-4 col-sm-4 col-12 my-auto mx-auto a">
+                        <h3 class="text-muted mb-md-0 mb-5 bold-text fw-bold"><a href="#">Travia</a></h3>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                        <h6 class="mb-3 mb-lg-4 bold-text "><b>MENU</b></h6>
+                        <ul class="list-unstyled">
+                            <li>Home</li>
+                            <li>About Us</li>
+                            <li>Link3</li>
+                            <li>Link4</li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-12">
+                        <h6 class="mb-3 mb-lg-4 text-muted bold-text mt-sm-0 mt-5"><b>ADDRESS</b></h6>
+                        <p class="mb-1">605, RATAN ICON BUILDING</p>
+                        <p>SEAWOODS SECTOR</p>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-xl-8 col-md-4 col-sm-4 col-auto my-md-0 mt-5 order-sm-1 order-3 align-self-end">
+                        <p class="social text-muted mb-0 pb-0 bold-text"> <span class="mx-2"><i
+                                    class="bi bi-facebook" aria-hidden="true"></i></span> <span class="mx-2"><i
+                                    class="bi bi-linkedin" aria-hidden="true"></i></span> <span
+                                class="mx-2"><i class="bi bi-twitter" aria-hidden="true"></i></span> <span
+                                class="mx-2"><i class="bi bi-instagram" aria-hidden="true"></i></span> </p><small
+                            class="rights mt-4">Copyright &copy; All Rights Reserved.</small>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-1 align-self-end ">
+                        <h6 class="mt-55 mt-2 text-muted bold-text"><b class="text-uppercase">email</b></h6><small> <span><i
+                                    class="fa fa-envelope" aria-hidden="true"></i></span> anirudh@travia.com</small>
+                    </div>
+                    <div class="col-xl-2 col-md-4 col-sm-4 col-auto order-2 align-self-end mt-3 ">
+                        <h6 class="text-muted bold-text"><b class="text-uppercase">phone</b></h6><small><span><i
+                                    class="fa fa-envelope" aria-hidden="true"></i></span> 0755-1234567</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <script src="app.js" defer></script>
+
+</body>
+
+</html>
