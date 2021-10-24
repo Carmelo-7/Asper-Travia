@@ -31,8 +31,37 @@ TNCchecks.forEach((TNCcheck) => {
 }
 );
 
-let loginModal = document.querySelector('#login-modal') ;
 
-loginModal.addEventListener('submit',(e) => {
-   e.preventDefault();
+
+
+// Form Validation code:-
+
+let loginForm = document.querySelector('#login-modal form') ;
+
+loginForm.addEventListener('submit',(e) => {
+
+    let mailId = loginForm.querySelector('[type="email"]'),errorCheck;
+    let pwd = loginForm.querySelector ('[type="password"]');
+
+    if(mailId.value===null || mailId.value===''){
+        let mailErr = mailId.nextElementSibling;
+        mailErr.innerText = "email address required"; 
+        errorCheck = true;
+    }
+ 
+    if(pwd.value===null || pwd.value===''){
+        let pwdErr = pwd.nextElementSibling;
+        pwdErr.innerText = "password required"; 
+        errorCheck = true;
+    }
+
+    else if (pwd.value.length < 8 ){
+        let pwdErr = pwd.nextElementSibling;
+        pwdErr.innerText = "password must consist of 8 or more characters"; 
+        errorCheck = true;
+    }
+
+
+    if(errorCheck)
+       e.preventDefault();
 })

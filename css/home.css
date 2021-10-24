@@ -112,6 +112,12 @@ nav .btn {
   padding: 4.5rem 7.5rem;
 }
 
+@media screen and (max-width: 660px) {
+  #booking {
+    padding: 4.5rem 2rem;
+  }
+}
+
 #booking h4 {
   font-family: Metropolis-bold;
 }
@@ -140,6 +146,10 @@ nav .btn {
 
 .cards-container .Card .icon-wrap img {
   width: 60%;
+}
+
+form .error {
+  font-size: 0.6rem;
 }
 
 #login-modal .modal-body h4 span {
@@ -196,11 +206,6 @@ nav .btn {
       justify-self: end;
 }
 
-.register-form {
-  -webkit-box-shadow: 0 0 10px lightgray;
-          box-shadow: 0 0 10px lightgray;
-}
-
 .register-form h4 span {
   color: #ff8300;
   font-family: Metropolis-bold;
@@ -214,6 +219,8 @@ nav .btn {
 .register-form form {
   max-width: 60%;
   padding: 2rem 3rem;
+  -webkit-box-shadow: 0 0 10px lightgray;
+          box-shadow: 0 0 10px lightgray;
 }
 
 .register-form form .user-name input {

@@ -123,6 +123,10 @@ nav .btn {
 
 #booking {
     padding: 4.5rem 7.5rem;
+
+    @include MediaQuery(660px){
+        padding: 4.5rem 2rem;
+    }
 }
 
 #booking h4 {
@@ -156,6 +160,10 @@ nav .btn {
     }
 }
 
+
+form .error{
+    font-size: 0.6rem;
+}
 #login-modal .modal-body {
     h4 span {
         color: #ff8300;
@@ -219,7 +227,7 @@ nav .btn {
 
 .register-form{
 
-    box-shadow: 0 0 10px lightgray;
+    
 
     h4 span {
         color: #ff8300;
@@ -234,7 +242,7 @@ nav .btn {
     form {
         max-width: 60%;
         padding: 2rem 3rem;
-
+        box-shadow: 0 0 10px lightgray;
         
         .user-name {
             input {
